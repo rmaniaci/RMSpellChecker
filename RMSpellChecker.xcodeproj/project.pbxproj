@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32306AA21EC3A1FC00E0926A /* RMSpellChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 327ADCD71EBC409B00233988 /* RMSpellChecker.m */; };
+		323975CE1EC26EA90003D737 /* RMSpellCheckerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323975CD1EC26EA90003D737 /* RMSpellCheckerTests.m */; };
 		327ADC931EBC3EFB00233988 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327ADC921EBC3EFB00233988 /* main.m */; };
+		327ADCD81EBC409B00233988 /* RMSpellChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 327ADCD71EBC409B00233988 /* RMSpellChecker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,11 +26,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		32306A9D1EC3A0A400E0926A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RMSpellCheckerTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		32306AA41EC3C30000E0926A /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		32306AA51EC3C31000E0926A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		323975CB1EC26EA90003D737 /* RMSpellCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMSpellCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323975CD1EC26EA90003D737 /* RMSpellCheckerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSpellCheckerTests.m; sourceTree = "<group>"; };
 		327ADC8F1EBC3EFB00233988 /* RMSpellChecker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RMSpellChecker; sourceTree = BUILT_PRODUCTS_DIR; };
 		327ADC921EBC3EFB00233988 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		327ADCD61EBC409B00233988 /* RMSpellChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSpellChecker.h; sourceTree = "<group>"; };
+		327ADCD71EBC409B00233988 /* RMSpellChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSpellChecker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		323975C81EC26EA90003D737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		327ADC8C1EBC3EFB00233988 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +55,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323975CC1EC26EA90003D737 /* RMSpellCheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				323975CD1EC26EA90003D737 /* RMSpellCheckerTests.m */,
+				32306A9D1EC3A0A400E0926A /* Info.plist */,
+			);
+			path = RMSpellCheckerTests;
+			sourceTree = "<group>";
+		};
 		327ADC861EBC3EFB00233988 = {
 			isa = PBXGroup;
 			children = (
+				32306AA41EC3C30000E0926A /* LICENSE.md */,
+				32306AA51EC3C31000E0926A /* README.md */,
 				327ADC911EBC3EFB00233988 /* RMSpellChecker */,
+				323975CC1EC26EA90003D737 /* RMSpellCheckerTests */,
 				327ADC901EBC3EFB00233988 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				327ADC8F1EBC3EFB00233988 /* RMSpellChecker */,
+				323975CB1EC26EA90003D737 /* RMSpellCheckerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +87,8 @@
 		327ADC911EBC3EFB00233988 /* RMSpellChecker */ = {
 			isa = PBXGroup;
 			children = (
+				327ADCD61EBC409B00233988 /* RMSpellChecker.h */,
+				327ADCD71EBC409B00233988 /* RMSpellChecker.m */,
 				327ADC921EBC3EFB00233988 /* main.m */,
 			);
 			path = RMSpellChecker;
@@ -65,6 +97,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		323975CA1EC26EA90003D737 /* RMSpellCheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323975D01EC26EAA0003D737 /* Build configuration list for PBXNativeTarget "RMSpellCheckerTests" */;
+			buildPhases = (
+				323975C71EC26EA90003D737 /* Sources */,
+				323975C81EC26EA90003D737 /* Frameworks */,
+				323975C91EC26EA90003D737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RMSpellCheckerTests;
+			productName = RMSpellCheckerTests;
+			productReference = 323975CB1EC26EA90003D737 /* RMSpellCheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		327ADC8E1EBC3EFB00233988 /* RMSpellChecker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 327ADC961EBC3EFB00233988 /* Build configuration list for PBXNativeTarget "RMSpellChecker" */;
@@ -88,9 +137,15 @@
 		327ADC871EBC3EFB00233988 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RM;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Lantern, Inc.";
+				ORGANIZATIONNAME = "Ross Maniaci";
 				TargetAttributes = {
+					323975CA1EC26EA90003D737 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 97ASU33JJP;
+						ProvisioningStyle = Automatic;
+					};
 					327ADC8E1EBC3EFB00233988 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 97ASU33JJP;
@@ -111,22 +166,71 @@
 			projectRoot = "";
 			targets = (
 				327ADC8E1EBC3EFB00233988 /* RMSpellChecker */,
+				323975CA1EC26EA90003D737 /* RMSpellCheckerTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		323975C91EC26EA90003D737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		323975C71EC26EA90003D737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32306AA21EC3A1FC00E0926A /* RMSpellChecker.m in Sources */,
+				323975CE1EC26EA90003D737 /* RMSpellCheckerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		327ADC8B1EBC3EFB00233988 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				327ADC931EBC3EFB00233988 /* main.m in Sources */,
+				327ADCD81EBC409B00233988 /* RMSpellChecker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		323975D11EC26EAA0003D737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RMSpellCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lantern.RMSpellCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		323975D21EC26EAA0003D737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RMSpellCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lantern.RMSpellCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
 		327ADC941EBC3EFB00233988 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -219,22 +323,39 @@
 		327ADC971EBC3EFB00233988 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 97ASU33JJP;
+				INFOPLIST_FILE = "$(SRCROOT)/RMSpellChecker/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rossmaniaci.RMSpellChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		327ADC981EBC3EFB00233988 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 97ASU33JJP;
+				INFOPLIST_FILE = "$(SRCROOT)/RMSpellChecker/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rossmaniaci.RMSpellChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		323975D01EC26EAA0003D737 /* Build configuration list for PBXNativeTarget "RMSpellCheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323975D11EC26EAA0003D737 /* Debug */,
+				323975D21EC26EAA0003D737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		327ADC8A1EBC3EFB00233988 /* Build configuration list for PBXProject "RMSpellChecker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -251,6 +372,7 @@
 				327ADC981EBC3EFB00233988 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
