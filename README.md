@@ -9,14 +9,17 @@ RMSpellChecker is an Objective-C command line interface designed to run in a Uni
 This program was developed with MacOS Sierra version 10.12.4, Xcode version 8.3.2, and Objective-C 2.0.
 
 First navigate to the RMSpellChecker folder inside the RMSpellChecker project.
+
 /path/to/the/files/RMSpellChecker/RMSpellChecker
 
 Compile the program using Clang by entering the following command.
+
 $ clang -fobjc-arc -framework Foundation main.m RMSpellChecker.m -o RMSpellChecker
 
 To run the program using the given format (echo and pipe) enter the following command.
 
 $ echo 'misspelledword' | ./RMSpellChecker
+
 correctlyspelledword
 
 If the program cannot find a correctly spelled suggestion, it will return "NO SUGGESTION".
@@ -26,9 +29,11 @@ If the program cannot find a correctly spelled suggestion, it will return "NO SU
 This program was tested with MacOS Sierra version 10.12.4, Xcode version 8.3.2, and Objective-C 2.0.
 
 First navigate to the RMSpellChecker project.
+
 /path/to/the/files/RMSpellChecker/
 
 To run unit tests from the command line using the xctest framework, enter the following command:
+
 $ xcodebuild test -project RMSpellChecker.xcodeproj -scheme RMSpellChecker -destination 'platform=OS X,arch=x86_64'
 
 ## License
