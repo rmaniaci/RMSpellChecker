@@ -47,4 +47,4 @@ $ xcodebuild test -project RMSpellChecker.xcodeproj -scheme RMSpellChecker -dest
 
 ## License
 
-MIT license described in the LICENSE file.
+MIT license as described in the LICENSE file.
