@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
         NSString *outputString = [spellChecker checkSpelling:inputString];
         
         // Output the spelling suggestion from checkSpelling: to the command line.
-        printf("%s", [outputString UTF8String]);
+        printf("%s\n", [outputString UTF8String]);
     }
     
     return 0;
