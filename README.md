@@ -15,6 +15,7 @@ Compile the program using Clang by entering the following command.
 $ clang -fobjc-arc -framework Foundation main.m RMSpellChecker.m -o RMSpellChecker
 
 To run the program using the given format (echo and pipe) enter the following command.
+
 $ echo 'misspelledword' | ./RMSpellChecker
 correctlyspelledword
 
