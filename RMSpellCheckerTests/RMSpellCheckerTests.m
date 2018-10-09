@@ -75,7 +75,7 @@
 // Test the performance of the method that populates both the word dictionary and the simple dictionary from a source file.
 - (void)testPopulateDictionariesPerformance {
     [self measureBlock:^{
-        [testSpellChecker populateDictionaries];
+        [self->testSpellChecker populateDictionaries];
     }];
 }
 
