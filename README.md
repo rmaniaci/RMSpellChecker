@@ -42,7 +42,7 @@ First navigate to the RMSpellChecker project.
 To run unit tests from the command line using the xctest framework, enter the following command:
 
 ```
-$ xcodebuild test -project RMSpellChecker.xcodeproj -scheme RMSpellChecker -destination 'platform=OS X,arch=x86_64'
+$ xcodebuild test -project RMSpellChecker.xcodeproj -scheme RMSpellCheckerTests -destination 'platform=OS X,arch=x86_64'
 ```
 
 ## License
